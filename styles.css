@@ -1,0 +1,124 @@
+html{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h3{
+    color: hsl(0, 0%, 95%);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.site{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px;
+     
+}
+
+
+/*the orange part of the card*/
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0px 0px 8px;
+}
+
+.sedan a{
+    color: hsl(31, 77%, 52%);
+}
+.sedan a:hover{
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+    border: solid 1px white;
+}
+
+/*green part*/
+
+.suv{
+    background-color: hsl(184, 100%, 22%) ;
+    
+}
+.suv a{
+    color: hsl(184, 100%, 22%) ;
+}
+.suv a:hover{
+    color: white;
+    background-color: hsl(184, 100%, 22%) ;
+    border: solid 1px white;
+}
+
+
+
+/*dark green part*/
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 8px 8px 0px;
+}
+
+.luxury a{
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury a:hover{
+    color: white;
+    background-color: hsl(179, 100%, 13%) ;
+    border: solid 1px white;
+}
+
+
+
+
+
+.sedan,.suv,.luxury {
+    
+    display: flex;
+    flex-direction: column ;
+    height: 300px;
+    padding: 70px 70px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: left;
+}
+
+img {
+       width: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* the learn more buttons */
+
+a{
+    display: flex;
+    margin-top: 40px;
+    border: none;
+    width: 130px;
+    padding-left: 20px;
+    line-height: 3em;
+    border-radius: 20px;
+    text-align: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+@media screen and (max-width: 780px){
+  
+
+    .site{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .suv,.sedan,.luxury{
+        height: 100%;
+        border-radius: 0px;
+        padding: 50px;
+    }
+}
